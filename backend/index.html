@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--https://gist.github.com/whitingx/3840905--> 
+    <!-- This is an SEO Change -->
+    <meta name='pagename' content='Index'>
+
+    <!--https://www.w3schools.com/tags/tag_meta.asp--> 
+    <!-- This is an SEO Change -->
+    <meta name="description" content="Test Website Centered Around Non-existent Personal Budget Application">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Tafari Lanclos">
+    
+    <!--https://ogp.me/-->
+    <!-- This is an SEO Change -->
+    <meta property="og:title" content="My Budget" />
+    <meta property="og:url" content="http://11.187.46.254:8080" />
+
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/main.css">
+    <title>My Budget</title>
+
+    <!-- https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock -->
+    <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+
+</head>
+<body onload="startTime()">
+    
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/login.html">Login</a></li>
+            
+            <!-- This is a Semantic HTML Change -->
+            <li><a href="/signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>My Budget</h1>
+        <h2>A personal-budget management app</h2>
+        <h3 id="txt"></h3>
+
+        <!--Image by <a href="https://pixabay.com/users/Clker-Free-Vector-Images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=308936">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=308936">Pixabay</a>-->
+        <!-- This is an A11y Change -->
+        <img src="homeicon.png" alt="Home Menu Icon" style="width:128px;height:128px;">
+    
+    </header>
+
+    <main class="center">
+        
+        <div class="_inline-block">
+            <article>
+                <!--https://www.w3schools.com/tags/tag_summary.asp-->
+                <!-- This is a Semantic HTML Change -->
+                <details>
+                    <summary><b>Summary of the Home page</b></summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a quam, molestias facere enim, libero praesentium labore, omnis alias consectetur optio! Nobis perferendis quibusdam, labore blanditiis architecto iusto rerum alias!</p>
+                </details>
+
+                <h1>About</h1>
+                <p>
+                    Do you know where you are spending your money? If you really knew 
+                    you would be surprised! Proper budge management depends on many factors
+                    and this app will help you with that! 
+                </p>
+            </article>
+
+            <article>
+                <h1>Alerts</h1>
+                <p>
+                    <!--https://www.w3schools.com/tags/tag_mark.asp-->
+                    <!-- This is a Semantic HTML Change -->
+                    What if you didn't have money left in your budget for clothes. <mark>You will get an alert.</mark>
+                </p>
+            </article>
+
+            <article>
+                <h1>Results</h1>
+                <p>
+                    People whp stick to a financial plan, budget every expense effectively.
+                    Also, they tend to live happier lives since they spend without worry of running out of money
+                    because they know it is all good and accounted for.
+                </p>
+            </article>
+
+            <article>
+                <h1>Free</h1>
+                <p>
+                    This app is free!!! And you are the only one holding yourself back from benefiting from it.
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="center">
+            All rights reserved &copy;
+        </div>
+    </footer>
+
+</body>
+</html>
