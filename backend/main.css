@@ -1,0 +1,111 @@
+body {
+    font-size: 10px;
+    font-family: Tahoma, Arial;
+}
+
+mark { 
+    background-color: rgb(83, 30, 107);
+    color: black;
+  }
+
+nav {
+    width: 100%;
+    background-color: #4d5791;
+    height: 44px;
+    padding: 0 48px;
+}
+
+nav ul,
+nav ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 44px;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #4d5791;
+}
+
+header {
+    height: 350px;
+    background-color: #b4c6f0;
+    background-image: url('/bg.png');
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 40px;
+}
+
+header h1,
+header h2,
+/*This is a Semantic HTML Change */
+header h3 {
+    text-align: center;
+    margin: 0;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 4.2em;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    color: #4d5791;
+
+/*This is a Semantic HTML Change */
+/*This is an A11y Change */
+    font-size: 3.2em;
+}
+
+/*This is a Semantic HTML Change */
+/*This is an A11y Change */
+header h3 {
+    color: white;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 40px;
+}
+
+main article {
+    display: inline-block;
+    width: 100%;
+    max-width: 340px;
+    text-align: justify;
+    margin: 0;
+}
+
+footer {
+    height: 200px;
+    background-color: #b4c6f0;
+    padding: 40px;
+    font-size: 1.4em;
+}
+
+.center {
+    text-align: center;
+}
+
+._inline-block {
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+    main article {
+        margin: 10px;
+    }
+}
