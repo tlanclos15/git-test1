@@ -100,6 +100,11 @@ footer {
     text-align: center;
 }
 
+.aligncenter {
+    text-align: center;
+}
+
+
 ._inline-block {
     display: inline-block;
 }
