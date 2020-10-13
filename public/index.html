@@ -108,9 +108,9 @@
             </article>
 
             <article>
-                <h1>Chart</h1>
+                <h1>Chart </h1>
                 <p>
-                    <canvas id="myChart" ></canvas>"
+                    <canvas id="myChart" width="400" height="400"></canvas>"
                 </p>
 
                 <body>
@@ -321,7 +321,7 @@
         }
 
         function getBudget () {
-            axios.get('/budget')
+            axios.get('http://localhost:3000/budget')
             .then(function (res) {
                 console.log(res);
                 for (var i = 0; i < res.data.myBudget.length; i++){
