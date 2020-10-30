@@ -5,6 +5,12 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
+// Mongoose
+const mongoose = require("mongoose")
+const namesModel = require("./models/name_schema")
+
+let url = 'mongodb://localhost:27017/chartDatabase';
+
 //app.use(express.static('/public'));
 app.use(cors());
 

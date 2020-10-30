@@ -22,8 +22,8 @@
     
 
     <base href="/">
-    <link rel="stylesheet"  type="text/css" href="public\main.css">
-    <link rel="stylesheet"  type="text/css" href="public\reset.css">
+    <link rel="stylesheet"  type="text/css" href="/public/main.css">
+    <link rel="stylesheet"  type="text/css" href="/public/reset.css">
     <title>My Budget</title>
 
     <!-- https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock -->
@@ -66,7 +66,7 @@
 
         <!--Image by <a href="https://pixabay.com/users/Clker-Free-Vector-Images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=308936">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=308936">Pixabay</a>-->
         <!-- This is an A11y Change -->
-        <img src="public\homeicon.png" alt="Home Menu Icon" style="width:128px;height:128px;">
+        <img src="/public/homeicon.png" alt="Home Menu Icon" style="width:128px;height:128px;">
     
     </header>
 
@@ -321,7 +321,7 @@
         }
 
         function getBudget () {
-            axios.get('http://localhost:3000/budget')
+            axios.get('mongodb://localhost:27017/chartDatabase')
             .then(function (res) {
                 console.log(res);
                 for (var i = 0; i < res.data.myBudget.length; i++){
